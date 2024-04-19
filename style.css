@@ -4,6 +4,11 @@
     --purple-200: #a369ff;
     --purple-300: #8733FF;
     --purple-500: #5a13b4;
+
+    --html: #DB4E26;
+    --css: #2862EA;
+    --js: #E2C431;
+    --wp: #207196;
 }
 
 *{
@@ -34,7 +39,7 @@ body{
     height: 150px;
 }
 
-.buttonHeader{
+.button{
     background-color: var(--purple-200);
     color: var(--white--300);
     padding: 10px 15px;
@@ -46,7 +51,7 @@ body{
     transition: background-color 0.5s ease;
 }
 
-.buttonHeader:hover{
+.button:hover{
     background-color: var(--purple-500);
     transition: background-color 0.5s ease;
 }
@@ -54,7 +59,6 @@ body{
 #apresentacao{
     display: flex;
     align-items: center;
-    margin: 2% 10%;
     gap: 40px;
     justify-content: center;
 }
@@ -62,14 +66,130 @@ body{
     width: 750px;
 }
 
-#apresentacao h1{
+.tituloBloco{
     font-size: 2.5rem;
     color: var(--white--300);
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-#apresentacao p{
+.paragrafo{
     color: var(--white--300);
     font-size: 1.4rem;
+}
+
+
+.marginContainer{
+    margin: 8% 17%;
+}
+
+.skillContainer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+.skill{
+    padding: 10px 48.7px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.skill h3{
+    color: var(--white--300);
+    text-align: center;
+}
+
+.htmlColorBorder{
+    color: var(--html);
+}
+
+.cssColorBorder{
+    color: var(--css);
+}
+
+.jsColorBorder{
+    color: var(--js);
+}
+
+.wpColorBorder{
+    color: var(--wp);
+}
+
+.formularioContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    border-radius: 50px;
+    margin: 20px 25%;
+    gap: 30px;
+    padding: 35px 0;
+    min-height: 250px;
+    justify-content: center;
+    border: 3px solid var(--purple-500);
+}
+
+.formularioContato input{
+    color: var(--white--300);
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    min-width: 260px;
+    font-size: 1.2rem;
+}
+
+.formularioContato input::placeholder{
+    color: var(--white--300);
+    font-size: 1.2rem;
+}
+
+.formularioContato textarea{
+    width: 360px;
+    height: 130px;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    resize: none;
+    padding: 10px;
+}
+
+.formularioContato button{
+    border: none;
+}
+
+footer{
+    background-color: var(--purple-300);
+}
+
+footer div{
+    margin: 0 10%;
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px
+}
+
+footer img{
+    max-width: 50px;
+}
+
+footer a{
+    color: var(--white--300);
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .containerButtons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button{
+        font-size: 0.9rem;
+        margin: 10px 0;
+
+    }
 }
